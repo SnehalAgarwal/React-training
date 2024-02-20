@@ -18,6 +18,12 @@ const content = [
         "Official web page (react.dev)",
         "Next.js (Fullstack framework)",
         "React Native (build native mobile apps with React)"
+    ],
+    [
+        "Superset Dashboards",
+        "Superset Charts",
+        "Alerts and Reports",
+        "Users and Roles"
     ]
 ];
 
@@ -53,6 +59,12 @@ export default function App() {
                         onClick={() => setActiveContentIndex(2)}
                     >
                         Related Resources
+                    </button>
+                    <button
+                        className={activeContentIndex === 3 ? "active" : ""}
+                        onClick={() => setActiveContentIndex(3)}
+                    >
+                        Superset Features
                     </button>
                 </menu>
                 <div id="tab-content">
